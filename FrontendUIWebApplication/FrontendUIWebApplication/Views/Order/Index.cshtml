@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Order";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Order</h1>
+
+</div>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <!--begin::Card-->
+        <div class="card card-custom gutter-b example example-compact">
+            <!--begin::Form-->
+
+            <div class="card-body">
+                <div class="dataTables_wrapper dt-bootstrap4 no-footer">
+                    <div class="table-responsive">
+                        <table id="example" class="table table-head-custom dataTable no-footer dtr-inline dataTable-search"></table>
+                    </div>
+                </div>
+            </div>
+            <!--end::Form-->
+        </div>
+        <!--end::Card-->
+    </div>
+</div>
+@section Scripts {
+        <script src="~/js/datatables.bundle.js"></script>
+
+        <script src="~/js/Order/Order.js"></script>
+}
