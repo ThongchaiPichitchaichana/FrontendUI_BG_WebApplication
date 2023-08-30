@@ -1,0 +1,95 @@
+﻿@{
+    ViewData["Title"] = "FoodSale";
+}
+
+<div class="text-center">
+    <h1 class="display-4">FoodSale</h1>
+
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <!--begin::Card-->
+        <div class="card card-custom gutter-b example example-compact">
+            <div class="card-header">
+                <h3 class="card-title">FoodSale</h3>
+            </div>
+            <!--begin::Form-->
+            <form class="form formSearch" method="post" enctype="multipart/form-data">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <div class="col-lg-4">
+                            <label>Product</label>
+                            <input id="txt_search_Product" name="txt_search_Product" type="text" class="form-control form-control-solid" placeholder="">
+                        </div>
+                        <div class="col-lg-4">
+                            <label>Category</label>
+                            <input id="txt_search_Category" name="txt_search_Category" type="text" class="form-control form-control-solid" placeholder="">
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group row">
+                        <div class="col-lg-4">
+                            <label>Region</label>
+                            <input id="txt_search_Region" name="txt_search_Region" type="text" class="form-control form-control-solid" placeholder="">
+                        </div>
+                        <div class="col-lg-4">
+                            <label>City</label>
+                            <input id="txt_search_City" name="txt_search_City" type="text" class="form-control form-control-solid" placeholder="">
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                        <div class="col-lg-4">
+                            <label>FromDate</label>
+                            <input id="txt_search_FromDate" name="txt_search_FromDate" type="date" class="form-control form-control-solid" placeholder="">
+                        </div>
+                        <div class="col-lg-4">
+                            <label>ToDate</label>
+                            <input id="txt_search_City" name="txt_search_City" type="date" class="form-control form-control-solid" placeholder="">
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="form-group row" style="text-align: right">
+                        <div class="col-lg-12">
+                            <button type="button" id="btn_search" class="btn btn-primary mr-2">ค้นหา</button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+            <!--end::Form-->
+        </div>
+        <!--end::Card-->
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <!--begin::Card-->
+        <div class="card card-custom gutter-b example example-compact">
+            <!--begin::Form-->
+
+            <div class="card-body">
+                <div class="dataTables_wrapper dt-bootstrap4 no-footer">
+                    <div class="table-responsive">
+                        <table id="example" class="table table-head-custom dataTable no-footer dtr-inline dataTable-search"></table>
+                    </div>
+                </div>
+            </div>
+            <!--end::Form-->
+        </div>
+        <!--end::Card-->
+    </div>
+</div>
+@section Scripts {
+    <script src="~/js/datatables.bundle.js"></script>
+
+    <script src="~/js/Sale/Sale.js"></script>
+}
